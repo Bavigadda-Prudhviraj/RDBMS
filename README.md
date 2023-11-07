@@ -591,7 +591,7 @@ DELETE FROM film WHERE id = 1;
 The above query will delete the row with `id` 1 from the `film` table. If you don't specify a where clause, then all the rows from the table will be deleted. Example:
 
 ```sql
-DELETE FROM film;
+DELETE FROM film ;
 ```
 
 Let's talk about how delete works as well in terms of code.
@@ -601,4 +601,5 @@ for each row in film:
     if row.matches(conditions in where clause)
         delete row
 ```
+
 
